@@ -1,12 +1,12 @@
-:root{
+:root {
   --background: #121212;
   --empty: #757575;
   --border: #424242;
-  --wrong: #E4A81D;
-  --right: #43A047;
+  --wrong: #e4a81d;
+  --right: #43a047;
 }
 
-body{
+body {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -14,17 +14,17 @@ body{
   color: white;
 }
 
-body h1{
+body h1 {
   font-size: 2.2rem;
   margin-top: -15px;
 }
 
-body p{
+body p {
   font-size: 1.6rem;
   margin-bottom: 40px;
 }
 
-.home-container{
+.home-container {
   display: flex;
   width: 100%;
   max-width: 500px;
@@ -33,55 +33,56 @@ body p{
 }
 
 html,
-body{
+body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: var(--background);
 }
 
-nav{
+nav {
   width: 100%;
   display: flex;
   flex-direction: column;
 }
 
-nav > div{
+nav > div {
   margin-bottom: 10px;
   font-size: 1.2rem;
 }
 
-#game{
+#game {
   display: grid;
   place-items: center;
   width: 100%;
   height: 380px;
 }
 
-.grid{
+.grid {
   display: grid;
-  grid-template-rows: repeat(6,auto);
+  grid-template-rows: repeat(6, auto);
 }
 
-.grid-4{
-  grid-template-columns: repeat(4,auto);
+.grid-4 {
+  grid-template-columns: repeat(4, auto);
 }
 
-.grid-5{
-  grid-template-columns: repeat(5,auto);
+.grid-5 {
+  grid-template-columns: repeat(5, auto);
 }
 
-.grid-6{
-  grid-template-columns: repeat(6,auto);
+.grid-6 {
+  grid-template-columns: repeat(6, auto);
 }
 
-.grid-7{
-  grid-template-columns: repeat(7,auto);
+.grid-7 {
+  grid-template-columns: repeat(7, auto);
 }
 
-.grid-8{
-  grid-template-columns: repeat(8,auto);
+.grid-8 {
+  grid-template-columns: repeat(8, auto);
 }
 
-.box, .home-container > div{
+.box,
+.home-container > div {
   width: 50px;
   height: 50px;
   border: 2px solid var(--border);
@@ -95,57 +96,61 @@ nav > div{
   font-weight: bolder;
 }
 
-#reset{
+#reset {
   margin-top: 40px;
 }
 
-.home-container > div{
+.home-container > div {
   padding: 10px;
   cursor: pointer;
   transition: all 300ms;
 }
 
-.home-container > div:hover{
+.home-container > div:hover {
   scale: 0.9;
   background-color: var(--border);
 }
 
-.box.empty{
+.box.empty {
   background-color: var(--empty);
   border: 2px solid var(--empty);
 }
 
-.box.wrong{
+.box.wrong {
   background-color: var(--wrong);
   border: 2px solid var(--wrong);
 }
 
-.box.right{
-  background-color: var(--right);  
+.box.right {
+  background-color: var(--right);
   border: 2px solid var(--right);
 }
 
-.animated{
+.animated {
   animation: flip 0.5s ease;
 }
 
 @keyframes flip {
-  0%{
+  0% {
     transform: scaleY(1);
-  }50%{
+  }
+  50% {
     transform: scaleY(0);
-  }100%{
+  }
+  100% {
     transform: scaleY(1);
   }
 }
 
-.btns{
+.btns {
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
-.btn, .btn1, .btn2{
+.btn,
+.btn1,
+.btn2 {
   cursor: pointer;
   width: 250px;
   height: 45px;
@@ -158,19 +163,19 @@ nav > div{
   transition: all 300ms;
 }
 
-.btn:hover{
+.btn:hover {
   scale: 1.1;
 }
 
-.btn1:hover{
+.btn1:hover {
   background-color: var(--right);
 }
 
-.btn2:hover{
+.btn2:hover {
   background-color: var(--wrong);
 }
 
-.btn > a{
+.btn > a {
   text-decoration: none;
   color: white;
   font-size: 1.2rem;

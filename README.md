@@ -21,7 +21,7 @@ La idea de este proyecto es crear una versión del juego [Wordle](https://lapala
    npm run dev
    ```
 
-3. Tambien puedes abrir la carpeta del proyecto `entrega/index` en tu navegador web y comienza a jugar.
+3. También puedes abrir la carpeta del proyecto `entrega/index` en tu navegador web y comenzar a jugar.
 
 4. Si tienes problemas con el tercer punto, puedes abrir el proyecto en tu navegador instalando la extensión [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) en tu editor de código favorito y abrir el proyecto desde ahí.
 
@@ -42,7 +42,7 @@ Aprecio cualquier sugerencia para mejorar el contenido de este proyecto. Si dese
 ## Autores
 
 - **Mateo Álvarez Murillo** [drifterDev](https://github.com/drifterDev)
-- **Efrain Gomez Ramirez** [EfraGR](https://github.com/EfraGR)
+- **Efraín Gómez Ramírez** [EfraGR](https://github.com/EfraGR)
 - **Libardo Jose Navarro Pedrozo** [LibardoNavarro](https://github.com/LibardoNavarro)
 
 ## Licencia
