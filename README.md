@@ -55,7 +55,7 @@ Aprecio cualquier sugerencia para mejorar el contenido de este proyecto. Si dese
 
 ## Autores
 
-- **Mateo Álvarez Murillo** [drifterDev](https://github.com/drifterDev)
+- **Mateo Álvarez Murillo** [maalvarezmu](https://github.com/maalvarezmu)
 - **Efraín Gómez Ramírez** [EfraGR](https://github.com/EfraGR)
 - **Libardo Jose Navarro Pedrozo** [LibardoNavarro](https://github.com/LibardoNavarro)
 
