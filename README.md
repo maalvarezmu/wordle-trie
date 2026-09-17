@@ -31,7 +31,7 @@ Tener `npm` instalado. Si no lo tienes, descárgalo desde el [sitio oficial de N
 1. Clona este repositorio:
 
    ```bash
-   git clone https://github.com/maalvarezmu/wordle.git
+   git clone https://github.com/maalvarezmu/wordle-trie.git
    ```
 
 2. Instala las dependencias y ejecútalo en modo desarrollo:
