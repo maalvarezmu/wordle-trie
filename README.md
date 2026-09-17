@@ -1,39 +1,53 @@
-# Wordle
+# Wordle — con motor de validación propio (Trie)
 
-La idea de este proyecto es crear una versión del juego [Wordle](https://lapalabradeldia.com/) usando HTML, CSS y JavaScript. El proyecto está construido con [Vite](https://vitejs.dev/), un bundler que permite crear proyectos web modernos con una configuración mínima.
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat&logo=vite&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat)
+
+Recreación del clásico juego de palabras [Wordle](https://lapalabradeldia.com/), construida con HTML, CSS y JavaScript sobre [Vite](https://vitejs.dev/).
+
+La particularidad de esta implementación es que la validación de palabras **no depende de ninguna librería externa ni de una búsqueda lineal**: el diccionario está indexado en un **Trie** construido desde cero, lo que permite verificar en tiempo eficiente si una palabra existe y buscar coincidencias por prefijo — la misma técnica usada en sistemas de autocompletado y correctores ortográficos.
 
 ## Vista previa
 
 <img src="./public/preview.png">
 
+## Detalles técnicos: ¿por qué un Trie?
+
+Para validar si una palabra ingresada por el usuario existe en el diccionario, en vez de recorrer un arreglo con miles de palabras (`O(n · L)` por búsqueda), el diccionario se indexa una sola vez en un Trie al iniciar la aplicación. Esto permite:
+
+- **Validación en O(L)**, donde `L` es la longitud de la palabra, sin importar el tamaño del diccionario.
+- Una base reutilizable para features futuras como sugerencias por prefijo o autocompletado.
+
 ## Comenzando
 
-1. Clona este repositorio en tu máquina local o descargar la carpeta comprimida del proyecto:
+### Prerrequisitos
+
+Tener `npm` instalado. Si no lo tienes, descárgalo desde el [sitio oficial de Node.js](https://nodejs.org/).
+
+### Instalación
+
+1. Clona este repositorio:
 
    ```bash
-   git clone https://github.com/drifterDev/wordle.git
+   git clone https://github.com/maalvarezmu/wordle.git
    ```
 
-2. Si tienes npm instalado en tu sistema, puedes instalar las dependencias del proyecto y ejecutarlo en modo desarrollo:
+2. Instala las dependencias y ejecútalo en modo desarrollo:
 
    ```bash
    npm install
    npm run dev
    ```
 
-3. También puedes abrir la carpeta del proyecto `entrega/index` en tu navegador web y comenzar a jugar.
-
-4. Si tienes problemas con el tercer punto, puedes abrir el proyecto en tu navegador instalando la extensión [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) en tu editor de código favorito y abrir el proyecto desde ahí.
-
-### Prerrequisitos
-
-Antes de comenzar, asegúrate de tener instalado `npm` en tu sistema. Si no lo tienes instalado, puedes descargarlo e instalarlo desde [el sitio web oficial de Node.js](https://nodejs.org/).
+3. Alternativamente, abre la carpeta `entrega/index` en tu navegador, o usa la extensión [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) desde tu editor.
 
 ## Construido con
 
-- [Vite](https://vitejs.dev/) - Bundler
-- [CSS](https://developer.mozilla.org/es/docs/Web/CSS) - Lenguaje de estilos
-- [JavaScript](https://developer.mozilla.org/es/docs/Web/JavaScript) - Lenguaje de programación usado
+- [Vite](https://vitejs.dev/) — Bundler
+- [CSS](https://developer.mozilla.org/es/docs/Web/CSS) — Lenguaje de estilos
+- [JavaScript](https://developer.mozilla.org/es/docs/Web/JavaScript) — Lenguaje de programación, incluyendo la implementación propia del Trie
 
 ## Contribuyendo
 
