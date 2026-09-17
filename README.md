@@ -5,7 +5,7 @@
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat)
 
-Recreación del clásico juego de palabras [Wordle](https://lapalabradeldia.com/), construida con HTML, CSS y JavaScript sobre [Vite](https://vitejs.dev/).
+Proyecto realizado para la materia de **Estructuras de Datos** de la Universidad Nacional de Colombia. Recreación del clásico juego de palabras [Wordle](https://lapalabradeldia.com/), construida con HTML, CSS y JavaScript sobre [Vite](https://vitejs.dev/).
 
 La particularidad de esta implementación es que la validación de palabras **no depende de ninguna librería externa ni de una búsqueda lineal**: el diccionario está indexado en un **Trie** construido desde cero, lo que permite verificar en tiempo eficiente si una palabra existe y buscar coincidencias por prefijo — la misma técnica usada en sistemas de autocompletado y correctores ortográficos.
 
